@@ -6,6 +6,7 @@ import { app } from './app'
 
 const startApp = async ()=>{
 
+  console.log('starting up')
   // to check if the JWT key must be defined...if not 
   if(!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined')
